@@ -1,16 +1,15 @@
 import random
 import time
 
-compare_counter = 0
-swap_counter = 0
 
-def bubble_sort(random_list):
-    for start_index in range(len(random_list) - 1):
-        for index in range(1, len(random_list) - start_index):
-            if random_list[index - 1] > random_list[index]:
-                temp = random_list[index - 1]
-                random_list[index - 1] = random_list[index]
-                random_list[index] = temp
+def bubble_sort(arr):
+    swap_happend = True
+    while swap_happend:
+        swap_happend = False
+        for num in range(len(arr)-1):
+            if arr[num] > arr[num+1]:
+                swap_happend = True
+                arr[num], arr[num+1] = arr[num+1], arr[num]
 
 
 if __name__ == '__main__':
@@ -29,10 +28,5 @@ if __name__ == '__main__':
     print(list)
 
     print("데이터의 크기: {}".format(int(input_n)))
-    print("비교 횟수: {}".format(compare_counter))
-    print("교환 횟수: {}".format(swap_counter))
-    print("실행 시간: {}".format(running_time))
 
-# 최선일 경우 이미 정렬되어 있는 경우이기 때문에 이동 횟수는 0이고 비교 횟수는 (N*N)/2
-# 최악의 경우 비교 횟수와 이동 횟수가 모두 (N*N)/2
 # O(N**2)
