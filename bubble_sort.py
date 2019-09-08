@@ -28,5 +28,6 @@ if __name__ == '__main__':
     print(list)
 
     print("데이터의 크기: {}".format(int(input_n)))
-
+    print("소요 시간: {}".format(running_time))
+    
 # O(N**2)
