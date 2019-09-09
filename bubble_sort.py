@@ -2,7 +2,7 @@ import random
 import time
 
 
-def bubble_sort(arr):
+def bubblesort(arr):
     swap_happend = True
     while swap_happend:
         swap_happend = False
@@ -21,7 +21,7 @@ if __name__ == '__main__':
     print(list)
 
     start_time = time.time()
-    bubble_sort(list)
+    bubblesort(list)
     running_time = time.time() - start_time
 
     print("<정렬 후>")

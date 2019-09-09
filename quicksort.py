@@ -19,4 +19,4 @@ def quicksort(arr):
         return quicksort(smaller) + equal + quicksort(larger)
 
 l = [6, 8, 1, 4, 10, 7, 8, 9, 3, 2, 5]
-print(quicksort(l))
+# print(quicksort(l))

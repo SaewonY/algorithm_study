@@ -21,7 +21,7 @@ def merge_sorted(arr1, arr2):
     return sorted_arr
 
 
-def divide_arr(arr):
+def mergesort(arr):
     if len(arr) < 2:
         # print(f"Base condition reached with {arr[:]}")
         return arr[:]
@@ -30,14 +30,14 @@ def divide_arr(arr):
         # print("Current list too work with:", arr)
         # print("Left split:", arr[:middle])
         # print("Right split:", arr[middle:])
-        l1 = divide_arr(arr[:middle])
-        l2 = divide_arr(arr[middle:])
+        l1 = mergesort(arr[:middle])
+        l2 = mergesort(arr[middle:])
         return merge_sorted(l1, l2)
 
 
 ############ Program Execution ###########
 
 l = [8, 6, 2, 5, 2, 3, 8, 7, 2, 1]
-print(divide_arr(l))
+# print(mergesort(l))
 
 ############ End Program ###########
