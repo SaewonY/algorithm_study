@@ -1,18 +1,91 @@
-def put(item):
-    queue.append(item)
+import time
 
-def get():
-    return queue.pop()
+class Node:
+    def __init__(self, data=None):
+        self.data = data
+        self.next = None
 
-if __name__ == '__main__':
-    queue = []
-    put(1)
-    put(2)
-    put(3)
-    put(4)
+    
+class Queue:
+    def __init__(self):
+        print("Queue created")
+        self.head = None
+        self.tail = None
+    
+    def add(self, x):
+        if not isinstance(x, Node):
+            x = Node(x)
+        print(f"Appending {x.data} to the tail of the Queue")
+        if self.is_empty():
+            self.head = x
+        else:
+            self.tail.next = x
+        self.tail = x
+    
+    def remove(self):
+        '''remove and return the node at head of the queue'''
+        if not self.is_empty():
+            print(f"Removing node at head of the Queue")
+            curr = self.head
+            self.head = self.head.next
+            curr.next = None
+            return curr.data
+        else:
+            return "Queue is empty"
+    
+    def is_empty(self):
+        '''return True if queue is empty, else return false'''
+        return self.head == None
+    
+    def peek(self):
+        '''look at the node at head of the queue'''
+        if not self.is_empty():
+            return self.head.data
 
-    print("현재 queue의 모습")
-    print(queue)
+    def __str__(self):
+        print("Printing Queue state...")
+        to_print = ""
+        curr = self.head
+        while curr is not None:
+            to_print += str(curr.data) + "->"
+            curr = curr.next
+        if to_print:
+            if len(to_print) > 4:
+                print("Head", " "*(len(to_print)-9), "Tail")
+                print(" |", " "*(len(to_print)-6), "|")
+                print(" v", " "*(len(to_print)-6), "v")
+                return "[" + to_print[:-2] + "]"
+            else:
+                print("Head & Tail")
+                print(" |")
+                print(" V")
+                return "[" + to_print[:-2] + "]"
+        return "[]"
 
-    while queue:
-        print("POP > {}".format(get()))
+my_queue = Queue()
+print("Checking if Queue is empty:", my_queue.is_empty())
+time.sleep(2)
+my_queue.add(1)
+print(my_queue)
+time.sleep(2)
+my_queue.add(2)
+my_queue.add(3)
+print(my_queue)
+time.sleep(2)
+my_queue.add(4)
+my_queue.add(5)
+time.sleep(2)
+print("Checking node at head of Queue:", my_queue.peek())
+time.sleep(2)
+my_queue.add(6)
+print(my_queue)
+time.sleep(2)
+print(my_queue.remove())
+time.sleep(2)
+print(my_queue.remove())
+time.sleep(2)
+print(my_queue)
+time.sleep(2)
+my_queue.add(4)
+time.sleep(2)
+print(my_queue)
