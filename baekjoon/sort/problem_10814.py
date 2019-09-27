@@ -22,12 +22,10 @@ import sys
 N = int(input())
 
 user = []
-for _ in range(N):
-    # age, name = input().split()
+for i in range(N):
     age, name = sys.stdin.readline().split()
-    user.append((int(age), name))
+    user.append((int(age), name, i))
 
-# print(user)
-user = sorted(user, key=lambda user: user[0])
+user = sorted(user, key=lambda x: (x[0], x[2]))
 for i in user:
     print(i[0], i[1])
