@@ -451,3 +451,19 @@ with open('myfile.txt') as file:
   for line in file.readlines():
     print(line.strip().split('\t'))
 ~~~
+
+
+<br>
+<br>
+
+## Python 복잡도
+
+<br>
+
+![LIST](https://user-images.githubusercontent.com/40786348/66254570-fb6e1000-e7b2-11e9-9619-aed89f044c05.png)
+
+<br>
+
+![1234](https://user-images.githubusercontent.com/40786348/66254612-bf877a80-e7b3-11e9-9c7f-20e79c3a5981.PNG)
+
+- reference: https://wayhome25.github.io/python/2017/06/14/time-complexity/
