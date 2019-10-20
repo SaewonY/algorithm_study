@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 '''
 점프와 순간 이동
 
@@ -30,3 +31,6 @@ def solution(n):
         ans += b
         
     return ans
+
+N = int(input())
+ans = solution(N)
