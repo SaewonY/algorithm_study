@@ -1,5 +1,6 @@
 '''
-큰 수 만들기
+큰 수 만들기 (탐욕법)
+https://programmers.co.kr/learn/courses/30/lessons/42883
 
 문제 설명
 어떤 숫자에서 k개의 수를 제거했을 때 얻을 수 있는 가장 큰 숫자를 구하려 합니다.
@@ -11,7 +12,7 @@ number에서 k 개의 수를 제거했을 때 만들 수 있는 수 중 가장 �
 number는 1자리 이상, 1,000,000자리 이하인 숫자입니다.
 k는 1 이상 number의 자릿수 미만인 자연수입니다.
 
-입출력 예
+입출력 예시
 number	k	return
 1924	2	94
 1231234	3	3234
@@ -20,7 +21,7 @@ number	k	return
 
 def solution(number, k):
     collected = []
-    for (i, num) in enuerate(number):
+    for (i, num) in enumerate(number):
         while collected and collected[-1] < num and k > 0:
             collected.pop()
             k -= 1
