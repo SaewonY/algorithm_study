@@ -2,7 +2,8 @@
 JadenCase 문자열 만들기
 
 문제 설명
-JadenCase란 모든 단어의 첫 문자가 대문자이고, 그 외의 알파벳은 소문자인 문자열입니다. 문자열 s가 주어졌을 때, s를 JadenCase로 바꾼 문자열을 리턴하는 함수, solution을 완성해주세요.
+JadenCase란 모든 단어의 첫 문자가 대문자이고, 그 외의 알파벳은 소문자인 문자열입니다. 
+문자열 s가 주어졌을 때, s를 JadenCase로 바꾼 문자열을 리턴하는 함수, solution을 완성해주세요.
 
 제한 조건
 s는 길이 1 이상인 문자열입니다.
@@ -22,3 +23,8 @@ def solution(s):
         i = i.capitalize()
         answer += i + " "
     return answer[:-1]
+    
+
+input = "3people unFollowed me"
+result = solution(input)
+print(result)
