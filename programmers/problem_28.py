@@ -17,3 +17,15 @@ H-Index는 과학자의 생산성과 영향력을 나타내는 지표입니다. 
 citations	    return
 [3, 0, 6, 1, 5]	3
 '''
+
+
+def solution(citations):
+    citations.sort()
+    l = len(citations)
+    for i in range(l):
+        if citations[i] >= l-i:
+            return l-i
+
+input = [3, 0, 6, 1, 5]
+result = solution(input)
+print(result)
