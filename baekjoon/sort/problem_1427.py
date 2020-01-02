@@ -20,4 +20,4 @@ nums = [int(n) for n in N]
 nums = sorted(nums, reverse=True)
 
 for num in nums:
-    print(num, end= '')
+    print(num, end= '') 
