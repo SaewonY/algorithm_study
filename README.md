@@ -1,34 +1,34 @@
-## algorithm_study based on [this book](http://www.kyobobook.`c`o.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9788931459500&orderClick=LAG&Kc=), [this lecture](https://www.udemy.com/course/python-programming-algorithms-data-structures/) and problems based on [this site](https://www.acmicpc.net/)
-
-<br>
-
-<br>
-
-## **Summary**
-* [몫, 나머지 구하기](#몫,-나머지-구하기)
-* [진법 변환하기](#진법-변환하기)
-* [문자열 정렬하기](#문자열-정렬하기)
-* [알파벳 출력](#알파벳-출력)
-* [2차원 리스트 뒤집기](#2차원-리스트-뒤집기)
-* [모든 멤버의 type 변환하기 - map](#모든-멤버의-type-변환하기---map)
-* [sequence type의 * 연산](#sequence-type의-*-연산)
-* [곱집합, 혹은 조합 구하기](#곱집합,-혹은-조합-구하기)
-* [2차원 1차원 리스트로 만들기](#2차원-1차원-리스트로-만들기)
-* [가장 많이 등장하는 알파벳 찾기](#가장-많이-등장하는-알파벳-찾기)
-* [for문과 if문을 한번에](#for문과-if문을-한번에)
-* [이진탐색하기 - binary search](#이진탐색하기---binary-search)
-* [클래스 인스턴스 출력하기 - class의 자동 string casting](#클래스-인스턴스-출력하기---class의-자동-string-casting)
-* [큰 수를 할당해야 할 경우 - inf](#큰-수를-할당해야-할-경우---inf)
-* [파일 입출력 간단하게](#파일-입출력-간단하게)
-* [Python 복잡도](#Python-복잡도)
-
-
-
+## reference
+* [**backjoon**](https://www.acmicpc.net/problem/tags)
+* [**programmers**](https://programmers.co.kr/)
 
 <br>
 <br>
 
-## 몫, 나머지 구하기
+## **Useful stuff with python**
+* [1. 몫, 나머지 구하기](#1.-몫,-나머지-구하기)
+* [2. 진법 변환하기](#2.-진법-변환하기)
+* [3. 문자열 정렬하기](#3.-문자열-정렬하기)
+* [4. 알파벳 출력](#4.-알파벳-출력)
+* [5. 2차원 리스트 뒤집기](#5.-2차원-리스트-뒤집기)
+* [6. 모든 멤버의 type 변환하기 - map](#6.-모든-멤버의-type-변환하기---map)
+* [7. Sequence 멤버를 하나로 이어붙이기 - join](#7.-Sequence-멤버를-하나로-이어붙이기---join)
+* [8. Sequence type의 * 연산](#7.-Sequence-type의-*-연산)
+* [9. 곱집합, 혹은 조합 구하기](#9.-곱집합,-혹은-조합-구하기)
+* [10. 2차원 1차원 리스트로 만들기](#10.-2차원-1차원-리스트로-만들기)
+* [11. 가장 많이 등장하는 알파벳 찾기](#11.-가장-많이-등장하는-알파벳-찾기)
+* [12. for문과 if문을 한번에](#12.-for문과-if문을-한번에)
+* [13. 이진탐색하기 - binary search](#13.-이진탐색하기---binary-search)
+* [14. 클래스 인스턴스 출력하기 - class의 자동 string casting](#14.-클래스-인스턴스-출력하기---class의-자동-string-casting)
+* [15. 큰 수를 할당해야 할 경우 - inf](#15.-큰-수를-할당해야-할-경우---inf)
+* [16. 파일 입출력 간단하게](#16.-파일-입출력-간단하게)
+* [17. Python 복잡도](#17.-Python-복잡도)
+
+
+<br>
+<br>
+
+## 1. 몫, 나머지 구하기
 
 <br>
 
@@ -48,7 +48,7 @@ print(*divmod(a, b))
 
 <br>
 
-## 진법 변환하기
+## 2. 진법 변환하기
 
 <br>
 
@@ -71,7 +71,7 @@ answer = int(num, base)
 
 <br>
 
-## 문자열 정렬하기
+## 3. 문자열 정렬하기
 
 <br>
 
@@ -108,7 +108,7 @@ s.rjust(n) # 우측 정렬
 
 <br>
 
-## 알파벳 출력
+## 4. 알파벳 출력
 
 <br>
 
@@ -131,7 +131,7 @@ string.digits # 숫자 0123456789
 
 <br>
 
-## 2차원 리스트 뒤집기
+## 5. 2차원 리스트 뒤집기
 
 <br>
 
@@ -171,7 +171,7 @@ answer = dict(zip(animals, sounds)) # {'cat': 'meow', 'dog': 'woof', 'lion': 'ro
 
 <br>
 
-## 모든 멤버의 type 변환하기 - map
+## 6. 모든 멤버의 type 변환하기 - map
 
 <br>
 
@@ -192,7 +192,7 @@ list2 = list(map(int, list1))
 
 <br>
 
-## Sequence 멤버를 하나로 이어붙이기 - join
+## 7. Sequence 멤버를 하나로 이어붙이기 - join
 
 <br>
 
@@ -213,7 +213,7 @@ answer = ''.join(my_list)
 
 <br>
 
-## sequence type의 * 연산
+## 8. Sequence type의 * 연산
 
 <br>
 
@@ -239,7 +239,7 @@ answer= [123, 456]*n
 
 <br>
 
-## 곱집합, 혹은 조합 구하기
+## 9. 곱집합, 혹은 조합 구하기
 
 <br>
 
@@ -274,7 +274,7 @@ itertools.product(iterable1, iterable2, iterable3)
 
 <br>
 
-## 2차원 1차원 리스트로 만들기
+## 10. 2차원 1차원 리스트로 만들기
 
 <br>
 
@@ -317,7 +317,7 @@ list(reduce(operator.add, my_list))
 
 <br>
 
-## 가장 많이 등장하는 알파벳 찾기
+## 11. 가장 많이 등장하는 알파벳 찾기
 
 <br>
 
@@ -350,7 +350,7 @@ print(answer[100]) # = 0
 
 <br>
 
-## for문과 if문을 한번에
+## 12. for문과 if문을 한번에
 
 <br>
 
@@ -372,7 +372,7 @@ answer = [ i**2 for i in mylist if i %2 == 0]
 
 <br>
 
-## 이진탐색하기 - binary search 
+## 13. 이진탐색하기 - binary search 
 
 <br>
 
@@ -405,7 +405,7 @@ print(bisect.bisect(mylist, 3))
 
 <br>
 
-## 클래스 인스턴스 출력하기 - class의 자동 string casting
+## 14. 클래스 인스턴스 출력하기 - class의 자동 string casting
 
 <br>
 
@@ -432,7 +432,7 @@ point = Coord(1, 2)
 
 <br>
 
-## 큰 수를 할당해야 할 경우 - inf
+## 15. 큰 수를 할당해야 할 경우 - inf
 
 <br>
 
@@ -449,7 +449,7 @@ max_val = float('-inf')
 
 <br>
 
-## 파일 입출력 간단하게
+## 16. 파일 입출력 간단하게
 
 <br>
 
@@ -477,7 +477,7 @@ with open('myfile.txt') as file:
 <br>
 <br>
 
-## Python 복잡도
+## 17. Python 복잡도
 
 <br>
 
