@@ -28,7 +28,7 @@
 <br>
 <br>
 
-## 1. 몫, 나머지 구하기
+## 몫, 나머지 구하기
 
 <br>
 
@@ -48,7 +48,7 @@ print(*divmod(a, b))
 
 <br>
 
-## 2. 진법 변환하기
+## 진법 변환하기
 
 <br>
 
@@ -71,7 +71,7 @@ answer = int(num, base)
 
 <br>
 
-## 3. 문자열 정렬하기
+## 문자열 정렬하기
 
 <br>
 
@@ -108,7 +108,7 @@ s.rjust(n) # 우측 정렬
 
 <br>
 
-## 4. 알파벳 출력
+## 알파벳 출력
 
 <br>
 
@@ -131,7 +131,7 @@ string.digits # 숫자 0123456789
 
 <br>
 
-## 5. 2차원 리스트 뒤집기
+## 2차원 리스트 뒤집기
 
 <br>
 
@@ -171,7 +171,7 @@ answer = dict(zip(animals, sounds)) # {'cat': 'meow', 'dog': 'woof', 'lion': 'ro
 
 <br>
 
-## 6. 모든 멤버의 type 변환하기 - map
+## 모든 멤버의 type 변환하기 - map
 
 <br>
 
@@ -192,7 +192,7 @@ list2 = list(map(int, list1))
 
 <br>
 
-## 7. Sequence 멤버를 하나로 이어붙이기 - join
+## Sequence 멤버를 하나로 이어붙이기 - join
 
 <br>
 
@@ -213,7 +213,7 @@ answer = ''.join(my_list)
 
 <br>
 
-## 8. Sequence type의 * 연산
+## Sequence type의 * 연산
 
 <br>
 
@@ -239,7 +239,7 @@ answer= [123, 456]*n
 
 <br>
 
-## 9. 곱집합, 혹은 조합 구하기
+## 곱집합, 혹은 조합 구하기
 
 <br>
 
@@ -274,7 +274,7 @@ itertools.product(iterable1, iterable2, iterable3)
 
 <br>
 
-## 10. 2차원 1차원 리스트로 만들기
+## 2차원 1차원 리스트로 만들기
 
 <br>
 
@@ -317,7 +317,7 @@ list(reduce(operator.add, my_list))
 
 <br>
 
-## 11. 가장 많이 등장하는 알파벳 찾기
+## 가장 많이 등장하는 알파벳 찾기
 
 <br>
 
@@ -350,7 +350,7 @@ print(answer[100]) # = 0
 
 <br>
 
-## 12. for문과 if문을 한번에
+## for문과 if문을 한번에
 
 <br>
 
@@ -372,7 +372,7 @@ answer = [ i**2 for i in mylist if i %2 == 0]
 
 <br>
 
-## 13. 이진탐색하기 - binary search 
+## 이진탐색하기 - binary search 
 
 <br>
 
@@ -405,7 +405,7 @@ print(bisect.bisect(mylist, 3))
 
 <br>
 
-## 14. 클래스 인스턴스 출력하기 - class의 자동 string casting
+## 클래스 인스턴스 출력하기 - class의 자동 string casting
 
 <br>
 
@@ -432,7 +432,7 @@ point = Coord(1, 2)
 
 <br>
 
-## 15. 큰 수를 할당해야 할 경우 - inf
+## 큰 수를 할당해야 할 경우 - inf
 
 <br>
 
@@ -449,7 +449,7 @@ max_val = float('-inf')
 
 <br>
 
-## 16. 파일 입출력 간단하게
+## 파일 입출력 간단하게
 
 <br>
 
@@ -477,7 +477,7 @@ with open('myfile.txt') as file:
 <br>
 <br>
 
-## 17. Python 복잡도
+## Python 복잡도
 
 <br>
 
