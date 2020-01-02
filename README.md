@@ -1,9 +1,10 @@
 ## algorithm_study based on [this book](http://www.kyobobook.`c`o.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9788931459500&orderClick=LAG&Kc=), [this lecture](https://www.udemy.com/course/python-programming-algorithms-data-structures/) and problems based on [this site](https://www.acmicpc.net/)
 
 <br>
+
 <br>
 
-## Summary
+## **Summary**
 * [몫, 나머지 구하기](#몫,-나머지-구하기)
 * [진법 변환하기](#진법-변환하기)
 * [문자열 정렬하기](#문자열-정렬하기)
@@ -371,7 +372,7 @@ answer = [ i**2 for i in mylist if i %2 == 0]
 
 <br>
 
-## 이진탐색하기 - binary search
+## 이진탐색하기 - binary search 
 
 <br>
 
