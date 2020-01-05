@@ -37,7 +37,6 @@ P = []
 for i in A:
     P.append(sorted_A.index(i))
     sorted_A[sorted_A.index(i)] = -1
-print(P)
 
 results = [i for i in P]
 
