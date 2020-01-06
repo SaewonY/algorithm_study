@@ -1,30 +1,16 @@
 class Solution:
-    def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
-        
-        collected = []
-        
-        i = j = 0
-        
-        while i < len(nums1) and j < len(nums2):
-            if nums1[i] >= nums2[j]:
-                collected.append(nums2[j])
+    def longestPalindrome(self, s: str) -> str:
+
+        def helper(i, j):
+            while i >=0 and j < len(s) and s[i]==s[j]:
+                i -= 1
                 j += 1
-            else:
-                collected.append(nums1[i])
-                i += 1
-                
-        while i < len(nums1):
-            collected.append(nums1[i])
-            i += 1
-        while j < len(nums2):
-            collected.append(nums2[j])
-            j += 1
-        
-        if len(collected) % 2 != 0:
-            mid = len(collected) // 2
-            median = collected[mid]
-        else:
-            mid= len(collected) // 2
-            median = (collected[mid-1] + collected[mid]) / 2
+            return s[i+1:j]  # s[i] != s[j]
+
+        return s and max((a for i in range(len(s)) 
+                          for a in (helper(i, i), helper(i, i+1))), key=len) or ''
             
-        return median
+
+input = "babad"
+A = Solution()
+print(A.longestPalindrome(input))
