@@ -6,7 +6,8 @@ https://leetcode.com/problems/rotate-image/
 def solution(matrix):
 
     matrix[:] = zip(*matrix[::-1])
-    matrix[:] = [[nums[i] for nums in matrix[::-1]] for i in range(len(matrix))]
+    # matrix[:] = [[nums[i] for nums in matrix[::-1]] for i in range(len(matrix))]
+    
     return matrix
 
 input = [
