@@ -1,5 +1,5 @@
 '''
-뉴스 클러스터링
+뉴스 클러스터링 (카카오)
 https://programmers.co.kr/learn/courses/30/lessons/17677
 
 문제 설명
