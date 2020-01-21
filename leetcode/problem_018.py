@@ -6,9 +6,7 @@ https://leetcode.com/problems/4sum/
 
 def solution(nums, target):
 
-
     nums.sort()
-    print(nums)
     length = len(nums)
 
     collected = []
@@ -20,7 +18,7 @@ def solution(nums, target):
             first = nums[i]
             second = nums[j]
             left_idx, right_idx = j+1, length-1
-            
+
             while left_idx < right_idx:
                 total = first + second + nums[left_idx] + nums[right_idx]
 
@@ -34,8 +32,6 @@ def solution(nums, target):
                 else:
                     right_idx -= 1
     
-    collected = set(collected)
-
     return collected
 
 
