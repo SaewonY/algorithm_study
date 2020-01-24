@@ -16,11 +16,12 @@ arr1	                            arr2	                            return
 [[2, 3, 2], [4, 2, 4], [3, 1, 4]]	[[5, 4, 3], [2, 4, 1], [3, 1, 1]]	[[22, 22, 11], [36, 28, 18], [29, 20, 14]]
 '''
 
-def solution(arr1, arr2):
-    print(arr1)
-    print(arr2)
+import numpy as np
 
-    
+def solution(arr1, arr2):
+    arr1 = np.array(arr1)
+    arr2 = np.array(arr2)
+    return np.dot(arr1, arr2).tolist()
 
 input = [[1, 4], [3, 2], [4, 1]]
 input1 = [[3, 3], [3, 3]]
