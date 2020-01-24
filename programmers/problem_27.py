@@ -34,3 +34,7 @@ def solution(n):
                 break
     answer += 1
     return answer
+
+
+input = 15
+print(solution(input))
