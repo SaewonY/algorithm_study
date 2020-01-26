@@ -15,19 +15,6 @@ N개의 수가 주어졌을 때, 이를 오름차순으로 정렬하는 프로�
 
 import sys
 
-# N = int(input())
-# result = [0 for i in range(N)]
-
-# for num in sys.stdin:
-#     result[int(num)] += 1
-
-# for i in range(10001):
-#     if result[i] > 0:
-#         for j in range(result[i]):
-#             print(i)
-
-import sys
-
 N = int(input())
 result = [0 for i in range(10001)]
 
