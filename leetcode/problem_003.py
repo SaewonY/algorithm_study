@@ -14,10 +14,6 @@ class Solution:
                 max_length = max(max_length, i - start + 1)
                 
             used[char] = i
-            
-            print(used)
-            print("start", start)
-            print()
 
         return max_length
 
